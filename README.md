@@ -20,4 +20,4 @@ Donation
 
 If you think this project is important, you can give me a cup of coffee :)
 
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](orellabac@gmail.com)
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=CGVQGHTC4CR48&currency_code=USD&source=url)

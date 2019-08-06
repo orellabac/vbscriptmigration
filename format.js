@@ -15,7 +15,7 @@
  * -1 = TristateTrue - True 
  * 0 = TristateFalse - False
  */
-function FormatCurrency(Expression, NumDigAfterDec, IncLeadingDig, UseParForNegNum, GroupDig) {
+export function FormatCurrency(Expression, NumDigAfterDec, IncLeadingDig, UseParForNegNum, GroupDig) {
 
 }
 
@@ -30,7 +30,7 @@ function FormatCurrency(Expression, NumDigAfterDec, IncLeadingDig, UseParForNegN
  * 3 = vbLongTime - Returns time: hh:mm:ss PM/AM 
  * 4 = vbShortTime - Return time: hh:mm
  */
-function FormatDateTime(date, format) {
+export function FormatDateTime(date, format) {
 
 }
 
