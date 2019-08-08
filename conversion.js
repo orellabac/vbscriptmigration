@@ -1,9 +1,11 @@
+var moment = require("moment");
+
 /**
  * 
  * @param {*} string Required. A string expression. Cannot be an empty string!
  */
 function Asc(string) {
-
+    return String.fromCharCode(string[0]);
 }
 
 /**
@@ -11,7 +13,13 @@ function Asc(string) {
  * @param {*} expression Required. Any valid expression. A nonzero value returns True, zero returns False. A run-time error occurs if the expression can not be interpreted as a numeric value
  */
 function CBool(expression) {
-
+    if (typeof expression === "string") {
+        var asNumber = parseFloat(expression);
+        if (asNumber === NaN) {
+            throw "Type mismatch CBool";
+        }
+    }
+    return expression > 0;
 }
 
 /**
@@ -19,7 +27,13 @@ function CBool(expression) {
  * @param {*} expression Required. Any valid expression
  */
 function CByte(expression) {
-
+    if (typeof expression === "string") {
+        var asNumber = parseFloat(expression);
+        if (asNumber === NaN) {
+            throw "Type mismatch CByte";
+        }
+    }
+    return Math.round(expression % 255);
 }
 
 /**
@@ -27,7 +41,7 @@ function CByte(expression) {
  * @param {*} expression Required. Any valid expression
  */
 function CCur(expression) {
-
+    return parseFloat(expression.toFixed(4));
 }
 
 /**
@@ -35,7 +49,7 @@ function CCur(expression) {
  * @param {*} date Required. Any valid date expression (like Date() or Now())
  */
 function CDate(date) {
-
+    return moment(date).toDate();
 }
 
 /**
@@ -44,7 +58,7 @@ function CDate(date) {
  * @param {*} expression Required. Any valid expression
  */
 function CDbl(expression) {
-
+    return parseFloat(expression);
 }
 
 /**
@@ -52,7 +66,7 @@ function CDbl(expression) {
  * @param {*} charcode Required. A number that identifies a character
  */
 function Chr(charcode) {
-
+    return String.fromCharCode(charcode);
 }
 
 /**
@@ -60,7 +74,13 @@ function Chr(charcode) {
  * @param {*} expression Required. Any valid expression
  */
 function CInt(expression) {
-
+    var n = parseInt(expression);
+    if (isNaN(n)) {
+        throw "Type mismatch CInt";
+    }
+    if (n < -32768 || n > 32767) {
+        throw "Overflow CInt";
+    }
 }
 
 /**
@@ -68,14 +88,28 @@ function CInt(expression) {
  * @param {*} expression Required. Any valid expression
  */
 function CLng(expression) {
-
+    var n = parseInt(expression);
+    if (isNaN(n)) {
+        throw "Type mismatch CLng";
+    }
+    if (n < -2147483648 || n > 2147483647) {
+        throw "Overflow CLng";
+    }
 }
+
 
 /**
  * 
  * @param {*} expression CSng(expression) 
  */
 function CSng(expression) {
+    var n = parseFloat(expression);
+    if (isNaN(n)) {
+        throw "Type mismatch CSng";
+    }
+    if (n < -3.402823E38 || n > -1.401298E-45) {
+        throw "Overflow CSng";
+    }
 
 }
 
@@ -91,29 +125,35 @@ function CSng(expression) {
  * Other numeric - then the CStr function will return a string that contains the number.
  */
 function CStr(expression) {
-
+    if (expression === null) {
+        throw "Error";
+    }
+    if (expression === undefined) {
+        return "";
+    }
+    if (expression instanceof Date) {
+        // Format to vbShortDate mm/dd/yyyy
+        var mm = expression.getMonth() + 1;
+        var dd = expression.getDate();
+        var yyyy = expression.getFullYear();
+        return mm + '/' + dd + '/' + yyyy;
+    }
+    if (expression instanceof Exception) {
+        return "Error " + expression.message;
+    }
+    return expression.toString();
 }
 
-/**
- * 
- * @param {*} number Required. Any valid expression
- * If number is:
- * Null - then the Hex function returns Null.
- * Empty - then the Hex function returns zero (0).
- * Any other number - then the Hex function returns up to eight hexadecimal characters.
- */
-function Hex(number) {
-
-}
-
-/**
- * 
- * @param {*} number Required. Any valid expression
- * If number is:
- * Null - then the Oct function returns Null.
- * Empty - then the Oct function returns zero (0).
- * Any other number - then the Oct function returns up to 11 octal characters.
- */
-function Oct(number) {
-
+module.exports = {
+    Asc: Asc,
+    CBool: CBool,
+    CByte: CByte,
+    CCur: CCur,
+    CDate: CDate,
+    CDbl: CDbl,
+    Chr: Chr,
+    CInt: CInt,
+    CLng: CLng,
+    CSng: CSng,
+    CStr: CStr
 }
