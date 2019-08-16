@@ -1,0 +1,90 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: vbscriptcompatibilityjs
+  name: vbscriptcompatibilityjs
+  href: api/index.html
+- uid: vbscriptcompatibilityjs.Split
+  name: Split(expression, delimiter, count, compare)
+  href: api/index.html#vbscriptcompatibilityjs_Split
+  fullName: vbscriptcompatibilityjs.Split(expression, delimiter, count, compare)
+- uid: vbscriptcompatibilityjs.UBound
+  name: UBound(arrayname, dimension)
+  href: api/index.html#vbscriptcompatibilityjs_UBound
+  fullName: vbscriptcompatibilityjs.UBound(arrayname, dimension)
+- uid: vbscriptcompatibilityjs.VBScriptArrayFunctions
+  name: VBScriptArrayFunctions
+  href: api/VBScriptArrayFunctions.html#vbscriptcompatibilityjs_VBScriptArrayFunctions
+  fullName: vbscriptcompatibilityjs.VBScriptArrayFunctions
+- uid: vbscriptcompatibilityjs.VBScriptArrayFunctions.#ctor
+  name: VBScriptArrayFunctions()
+  href: api/VBScriptArrayFunctions.html#vbscriptcompatibilityjs_VBScriptArrayFunctions__ctor
+  fullName: vbscriptcompatibilityjs.VBScriptArrayFunctions.VBScriptArrayFunctions()
+- uid: vbscriptcompatibilityjs.VBScriptArrayFunctions.Filter
+  name: Filter(inputstrings, value, include, compare)
+  href: api/VBScriptArrayFunctions.html#vbscriptcompatibilityjs_VBScriptArrayFunctions_Filter
+  fullName: vbscriptcompatibilityjs.VBScriptArrayFunctions.Filter(inputstrings, value, include, compare)
+- uid: vbscriptcompatibilityjs.VBScriptArrayFunctions.IsArray
+  name: IsArray(variable)
+  href: api/VBScriptArrayFunctions.html#vbscriptcompatibilityjs_VBScriptArrayFunctions_IsArray
+  fullName: vbscriptcompatibilityjs.VBScriptArrayFunctions.IsArray(variable)
+- uid: vbscriptcompatibilityjs.VBScriptArrayFunctions.Join
+  name: Join(list, delimiter)
+  href: api/VBScriptArrayFunctions.html#vbscriptcompatibilityjs_VBScriptArrayFunctions_Join
+  fullName: vbscriptcompatibilityjs.VBScriptArrayFunctions.Join(list, delimiter)
+- uid: vbscriptcompatibilityjs.VBScriptArrayFunctions.LBound
+  name: LBound(arrayname, dimension)
+  href: api/VBScriptArrayFunctions.html#vbscriptcompatibilityjs_VBScriptArrayFunctions_LBound
+  fullName: vbscriptcompatibilityjs.VBScriptArrayFunctions.LBound(arrayname, dimension)
+- uid: vbscriptcompatibilityjs.VBScriptConversions
+  name: VBScriptConversions
+  href: api/VBScriptConversions.html#vbscriptcompatibilityjs_VBScriptConversions
+  fullName: vbscriptcompatibilityjs.VBScriptConversions
+- uid: vbscriptcompatibilityjs.VBScriptConversions.#ctor
+  name: VBScriptConversions()
+  href: api/VBScriptConversions.html#vbscriptcompatibilityjs_VBScriptConversions__ctor
+  fullName: vbscriptcompatibilityjs.VBScriptConversions.VBScriptConversions()
+- uid: vbscriptcompatibilityjs.VBScriptConversions.Asc
+  name: Asc(string)
+  href: api/VBScriptConversions.html#vbscriptcompatibilityjs_VBScriptConversions_Asc
+  fullName: vbscriptcompatibilityjs.VBScriptConversions.Asc(string)
+- uid: vbscriptcompatibilityjs.VBScriptConversions.CBool
+  name: CBool(expression)
+  href: api/VBScriptConversions.html#vbscriptcompatibilityjs_VBScriptConversions_CBool
+  fullName: vbscriptcompatibilityjs.VBScriptConversions.CBool(expression)
+- uid: vbscriptcompatibilityjs.VBScriptConversions.CByte
+  name: CByte(expression)
+  href: api/VBScriptConversions.html#vbscriptcompatibilityjs_VBScriptConversions_CByte
+  fullName: vbscriptcompatibilityjs.VBScriptConversions.CByte(expression)
+- uid: vbscriptcompatibilityjs.VBScriptConversions.CCur
+  name: CCur(expression)
+  href: api/VBScriptConversions.html#vbscriptcompatibilityjs_VBScriptConversions_CCur
+  fullName: vbscriptcompatibilityjs.VBScriptConversions.CCur(expression)
+- uid: vbscriptcompatibilityjs.VBScriptConversions.CDate
+  name: CDate(date)
+  href: api/VBScriptConversions.html#vbscriptcompatibilityjs_VBScriptConversions_CDate
+  fullName: vbscriptcompatibilityjs.VBScriptConversions.CDate(date)
+- uid: vbscriptcompatibilityjs.VBScriptConversions.CDbl
+  name: CDbl(expression)
+  href: api/VBScriptConversions.html#vbscriptcompatibilityjs_VBScriptConversions_CDbl
+  fullName: vbscriptcompatibilityjs.VBScriptConversions.CDbl(expression)
+- uid: vbscriptcompatibilityjs.VBScriptConversions.Chr
+  name: Chr(charcode)
+  href: api/VBScriptConversions.html#vbscriptcompatibilityjs_VBScriptConversions_Chr
+  fullName: vbscriptcompatibilityjs.VBScriptConversions.Chr(charcode)
+- uid: vbscriptcompatibilityjs.VBScriptConversions.CInt
+  name: CInt(expression)
+  href: api/VBScriptConversions.html#vbscriptcompatibilityjs_VBScriptConversions_CInt
+  fullName: vbscriptcompatibilityjs.VBScriptConversions.CInt(expression)
+- uid: vbscriptcompatibilityjs.VBScriptConversions.CLng
+  name: CLng(expression)
+  href: api/VBScriptConversions.html#vbscriptcompatibilityjs_VBScriptConversions_CLng
+  fullName: vbscriptcompatibilityjs.VBScriptConversions.CLng(expression)
+- uid: vbscriptcompatibilityjs.VBScriptConversions.CSng
+  name: CSng(expression)
+  href: api/VBScriptConversions.html#vbscriptcompatibilityjs_VBScriptConversions_CSng
+  fullName: vbscriptcompatibilityjs.VBScriptConversions.CSng(expression)
+- uid: vbscriptcompatibilityjs.VBScriptConversions.CStr
+  name: CStr(expression)
+  href: api/VBScriptConversions.html#vbscriptcompatibilityjs_VBScriptConversions_CStr
+  fullName: vbscriptcompatibilityjs.VBScriptConversions.CStr(expression)

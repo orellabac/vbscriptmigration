@@ -1,0 +1,97 @@
+{
+  "homepages": [],
+  "source_base_path": "/Users/mauriciorojas/vbscriptmigration",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "UniversalReference",
+      "source_relative_path": "yml/VBScriptArrayFunctions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VBScriptArrayFunctions.html",
+          "hash": "X4xtPj67pmZCRjgLiucsqA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "UniversalReference",
+      "source_relative_path": "yml/VBScriptConversions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VBScriptConversions.html",
+          "hash": "weMFi0LbDFJ0B66ySmL1jg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "UniversalReference",
+      "source_relative_path": "yml/index.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "l+XiZWbUb2cxND5XvFJW3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "yml/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "aU+AsDkIqF0PU4qjwyapaA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "UniversalReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor UniversalReferenceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
