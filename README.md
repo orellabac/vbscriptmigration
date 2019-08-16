@@ -10,10 +10,13 @@ So I decided to create a small compatibility library to make the task less stres
 
 Current Progress
 ---------------
+08/15/2019
+At this point I have implemented 50% of the common VBScript functions and started some validation unit tests.
+Some of the tests fail because VBScript had more accuracy on some operations. 
+I still do not know how to handle that so for now those tests will fail
 
-At this point I have only created the BuiltIn Functions stubs with JScomments
-My plan is to create a set of unit tests that take the VBScript input-output and validates equivalence.
-But that will take some time. I will be updating any progress.
+My plans are on finish all the the functions, add documentation and also use some of the common scripts to ease the migration process
+
 
 Donation
 -----------
