@@ -10,8 +10,9 @@ So I decided to create a small compatibility library to make the task less stres
 
 Current Progress
 ---------------
-08/15/2019
-At this point I have implemented 50% of the common VBScript functions and started some validation unit tests.
+9/25/2019
+At this point I have implemented 85% of the common VBScript functions and started some validation unit tests.
+The tests are still in progress.
 Some of the tests fail because VBScript had more accuracy on some operations. 
 I still do not know how to handle that so for now those tests will fail
 
